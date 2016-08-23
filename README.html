@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Little Chord Chart</title>
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Bowlby+One+SC|Swanky+and+Moo+Moo|Marvel' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+      
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap-3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap-3.2.0/css/bootstrap-theme.min.css">
+
+        <script src="js/jquery-1.11.0.min.js"></script> 
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="bootstrap-3.2.0/js/bootstrap.min.js"></script>        
+
+    <!--<script src="js/support/jquery-1.6.2.min.js"></script>-->
+    <script src="js/support/raphael-min.js"></script>
+
+    <script src="js/chord.js"></script>
+   <script src = "js/myscript.js"></script>
+   <script src = "js/jtab.js"></script>
+
+   <script>
+       $(function() { init() });
+</script>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 1</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>         
+    
+
+ 
+
+         <div class="container-fluid redObject" style="padding-top: 100px; background-color:lavender;">
+            <center><h1></h1>
+               <h1>Guitar Helper</h1>
+             <h1></h1></center>
+             
+        </div> 
+    
+    
+  
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>This page will show various chords.</p>
+                </div>
+                <div class="col-md-3">        
+                    <p>You can select different scales using the form.</p>      
+                </div>
+                <div class="col-md-3">        
+                    <p> Use the form below to compute your chord.</p>      
+                </div>
+                <div class="col-md-3">        
+                    <p><strong>Note: Still Testing!</strong></p>
+                </div>
+            </div>
+        </div>     
+<div class="container">
+  <h2>Fretboard Type</h2>
+  <p> Choose how many Frets to display </p>
+  <form role="form">
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 1: 19 Frets (Classical)</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 2: 24 Frets (Electric)</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio" disabled>Option 3: 27 Frets (Special Electric)</label>
+    </div>
+  </form>
+</div>
+            
+                     <div class="container-fluid redObject" style=" background-color:lavender;">
+            <center><h1></h1>
+               <h1>Fretboards</h1>
+             <h1></h1></center>
+             
+        </div> 
+  
+
+         
+        
+ 
+        <div class="container">
+            <h2>Typography</h2>
+            <p>A blockquote with right-aligned content:</p>
+            <blockquote class="blockquote-reverse">
+                <p>This simple fretboard example shows how a scale can be plotted, stored in a bitfield and retrieved, and plotted with the notes showing. It is also possible to plot chords and to slide them up the fretboard.p>
+                <footer>Description</footer>
+            </blockquote>
+        </div> 
+ 
+ 
+     <div id="text"></div>
+
+    <div id="fretboard"></div>
+    
+    
+
+    <div id="bitfield_output"></div>
+    
+    <div id="fretboard2"></div>
+    
+    <div id="bitfield_numbers"></div>
+    
+    
+    <div id="fretboard3"></div>
+    <div id="fretboard4"></div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="container">
+            <div class="row">    
+                <div class="jtab chordonly">Am:1 Am:2 Am:3 Am:4 Am:5 Am:6 Am:7 Am:8 Am:9 Am:10</div>
+                <div class="jtab chordonly">G:1 G:2 G:3 G:4 G:5 G:6 G:7 G:8 G:9 G:10</div>
+                <div class="jtab chordonly">F:1 F:2 F:3 F:4 F:5 F:6 F:7 F:8 F:9 F:10</div>
+                <div class="jtab chordonly">E:1 E:2 E:3 E:4 E:5 E:6 E:7 E:8 E:9 E:10</div>
+                <div class="jtab chordonly">Emaj7:1 Emaj7:2 Emaj7:3 Emaj7:4 Emaj7:5 Emaj7:6 Emaj7:7 Emaj7:8 Emaj7:9 Emaj7:10</div>
+                <div class="jtab chordonly">Csus2:1 Csus2:2 Csus2:3 Csus2:4 Csus2:5 Csus2:6 Csus2:7 Csus2:8 Csus2:9 Csus2:10</div>
+            </div>
+        </div>    
+    <script>
+ 
+        
+        
+    </script>
+        </body>
+</html>
